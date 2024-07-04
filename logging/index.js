@@ -13,7 +13,7 @@ var logger = new winston.Logger({
     }),
     new DailyRotateFile({
       name: "info-file",
-      filename: path.join(log_path, "log-siamsport-service-info.log"),
+      filename: path.join(log_path, "log-football-service-info.log"),
       datePattern: ".yyyy-MM-dd",
       maxsize: "50M",
       prettyPrint: true,
@@ -22,7 +22,7 @@ var logger = new winston.Logger({
     }),
     new DailyRotateFile({
       name: "error-file",
-      filename: path.join(log_path, "log-siamsport-service-error.log"),
+      filename: path.join(log_path, "log-football-service-error.log"),
       datePattern: ".yyyy-MM-dd",
       maxsize: "50M",
       prettyPrint: true,
@@ -38,7 +38,7 @@ var logger = new winston.Logger({
     }),
     new DailyRotateFile({
       name: "exception-file",
-      filename: path.join(log_path, "log-siamsport-service-exceptions.log"),
+      filename: path.join(log_path, "log-football-service-exceptions.log"),
       datePattern: ".yyyy-MM-dd",
       maxsize: "50M",
       prettyPrint: true,

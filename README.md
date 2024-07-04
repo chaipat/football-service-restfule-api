@@ -20,17 +20,17 @@ $ sudo yum install nodejs npm --enablerepo=epel
 ```sh
 $ npm install express-generator -g  
 ```
-***Generate siamsport-service-restfule-api***
+***Generate football-service-restfule-api***
 ```sh
-$ express siamsport-service-restfule-api
+$ express football-service-restfule-api
 ```
 ***Install Dependencies***
 ```sh
-$ cd siamsport-service-restfule-api && npm install  
+$ cd football-service-restfule-api && npm install  
 ```
 ***Start Service***
 ```sh
-$ DEBUG=siamsport-service-restfule-api:* npm start  
+$ DEBUG=football-service-restfule-api:* npm start  
 ```
 
 ### Install MySQL
@@ -96,22 +96,22 @@ $ npm install paginator
 
 ### Edit Permission for FTP  
 ```sh
-$ chmod -R 0775 siamsport-service-restfule-api  
-$ chown -R root.sftp_users siamsport-service-restfule-api/  
+$ chmod -R 0775 football-service-restfule-api  
+$ chown -R root.sftp_users football-service-restfule-api/  
 ```
 
 ### How to start service  
 ***Staging Server***
 ```sh
-$ cd /app/services/nodejs/siamsport-service-restfule-api/
-$ DEBUG=siamsport-service-restfule-api:* npm start
+$ cd /app/services/nodejs/football-service-restfule-api/
+$ DEBUG=football-service-restfule-api:* npm start
 OR
 $ node --expose-gc --max_old_space_size=2048 ./bin/www
 ```
 
 ### How to start service with PM2 Module
 ```sh
-$ cd /app/services/nodejs/siamsport-service-restfule-api/  
+$ cd /app/services/nodejs/football-service-restfule-api/  
 $ pm2 start ./bin/www -i max --watch --name="Siamsport2017Service" --node-args="--expose-gc --max_old_space_size=2048"
 ```
 
@@ -123,7 +123,7 @@ Parameters which you can pass to help the situation are : (Check this [blog])
 ### How to stop service with PM2 Module
 ***Staging Server***
 ```sh
-$ cd /app/services/nodejs/siamsport-service-restfule-api/  
+$ cd /app/services/nodejs/football-service-restfule-api/  
 $ pm2 stop Siamsport2017Service  
 $ pm2 delete Siamsport2017Service  
 ```

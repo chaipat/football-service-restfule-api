@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('siamsport-service-restfule-api:server');
+var debug = require('debug')('football-service-restfule-api:server');
 var http = require('http');
 
 /**
